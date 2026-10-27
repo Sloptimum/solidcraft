@@ -894,8 +894,9 @@ preference_settings! {
     free_orbit_upright: bool = false, PAGE_NAVIGATION => check_tr("nav.free_orbit_upright.label");
     /// Off: a right drag that the mouse mapping would orbit leaves the camera alone (#6492).
     right_drag_orbits: bool = true, PAGE_NAVIGATION => check_tr("nav.right_drag_orbits.label");
-    /// An orbit drag that reaches the edge of the view moves the cursor to the opposite edge and
-    /// keeps turning; false stops the drag at the edge of the screen, as before.
+    /// An orbit or pan drag that reaches the edge of the view, in the view or on the navigator,
+    /// moves the cursor to the opposite edge and keeps going; false stops the drag at the edge of
+    /// the screen, as before.
     orbit_cursor_wrap: bool = true, PAGE_NAVIGATION => check_tr("nav.orbit_cursor_wrap.label");
     /// View orientation widget: original signed axes (default) or compact cube.
     navigator_style: NavigatorStyle = NavigatorStyle::default(), PAGE_NAVIGATION;
